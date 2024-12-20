@@ -1,15 +1,20 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getBasketProductsThunk = createAsyncThunk('api/basket', async () => {
-    const response = axios.get('http://localhost:4000/basket')
+export const getBasketProductsThunk = createAsyncThunk('api/products/basket', async () => {
+    const response = await axios.get('http://localhost:5800/basket')
     return response.data
 })
 
+export const deleteProductsBasketThunk = createAsyncThunk('api/basket/delete', async (id) => {
+    const response = await axios.delete(`http://localhost:5800/basket/${id}`)
+    return id
+})
+
 export const basketSlice = createSlice({
-    name: basket,
+    name: 'basket',
     initialState:{
-        products: []
+        basket: []
     },
     reducer:[],
     extraReducers:builder => {
@@ -26,5 +31,10 @@ export const basketSlice = createSlice({
             state.loading = false
             state.error = action.error.message
         })
+
+        //delete
+        
     }
 })
+
+export default basketSlice.reducer

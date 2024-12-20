@@ -7,6 +7,11 @@
     height: auto;
     padding: 15px 15px;
     width: 20%;
+    margin: 15px;
+    border: 1px solid black;
+    img{
+        width: 90%;
+    }
     .buttons{
         display: flex;
         align-items: center;

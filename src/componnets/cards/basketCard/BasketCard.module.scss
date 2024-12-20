@@ -1,0 +1,38 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    padding: 15px 15px;
+    width: 20%;
+    margin: 15px;
+    border: 1px solid black;
+    img{
+        width: 90%;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        button{
+
+            padding: 10px 20px;
+            background: url(https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: .3s;
+            &:hover{
+                color: black;
+                background: none;
+                transition: .3s;
+            }
+    }
+}
+}

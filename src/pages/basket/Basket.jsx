@@ -1,8 +1,12 @@
 import React from 'react'
+import Layout from '../../layout/Layout'
+import SectionOfBasket from './components/sectionOfBasket/SectionOfBasket'
 
 const Basket = () => {
   return (
-    <div>Basket</div>
+    <Layout>
+      <SectionOfBasket/>
+    </Layout>
   )
 }
 

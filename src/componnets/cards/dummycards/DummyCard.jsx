@@ -3,7 +3,7 @@ import style from './DummyCard.module.scss'
 
 const DummyCard = ({item, addBasket, addWish}) => {
   return (
-    <div>
+    <div className={style.card}>
         <img src={item.thumbnail} alt={item.title} />
         <p>{item.title}</p>
         <p>${item.price}</p>
