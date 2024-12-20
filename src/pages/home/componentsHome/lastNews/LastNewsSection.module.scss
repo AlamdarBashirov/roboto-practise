@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    height: auto;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 85%;
+        height: 90%;
+        .sectionName{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            height: 20%;
+            h1{
+                color: black;
+                font-size: 40px;
+            }
+            span{
+                color: black;
+            }
+        }
+        .cardBox{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80%;
+            width: 100%;
+            .card{
+                height: 90%;
+                width: 47%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                img{
+                    width: 100%;
+                }
+                .buttons{
+                    display: flex;
+                    gap: 10px;
+                    button{
+
+                        padding: 10px 20px;
+                        background: url(https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        color: white;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        transition: .3s;
+                        &:hover{
+                            color: black;
+                            background: none;
+                            transition: .3s;
+                        }
+                    }
+                }
+                h5{
+                    a{
+                        color: black;
+                        font-size: 20px;
+                        text-decoration: none;
+                    }
+                }
+                p{
+                    color: grey;
+                }
+                span{
+                    color: grey;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .section{
+        height: auto;
+        padding: 40px 0;
+        .container{
+            width: 100%;
+            .sectionName{
+                h1{
+                    font-size: 30px;
+                }
+            }
+            .cardBox{
+                width: 100%;
+                flex-direction: column;
+                .card{
+                    width: 90%;
+                    margin: 25px 15px;
+                }
+            }
+        }
+    }
+}
