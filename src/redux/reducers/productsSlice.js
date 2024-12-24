@@ -7,12 +7,12 @@ export const getProductsThunk = createAsyncThunk('api/products', async () => {
 })
 
 export const postBasketThunk = createAsyncThunk('api/basket/post', async (data) => {
-    const response = axios.post("http://localhost:5800/basket",data)
+    const response =await axios.post("http://localhost:5000/basket",{...data,id: data.id.toString()})
     return data
 })
 
 export const postWishlistThunk = createAsyncThunk('api/wishlist/post', async (data) => {
-    const response = axios.post("http://localhost:5800/wishlist",data)
+    const response = await axios.post("http://localhost:5000/wishlist",{...data,id: data.id.toString()})
     return data
 })
 

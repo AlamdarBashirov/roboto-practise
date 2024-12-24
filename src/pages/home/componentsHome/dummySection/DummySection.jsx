@@ -20,6 +20,7 @@ const DummySection = () => {
         dispatch(postBasketThunk(item))
     }
 
+
     useEffect(() => {
         dispatch(getProductsThunk())
     }, []);

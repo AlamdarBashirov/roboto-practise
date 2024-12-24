@@ -60,7 +60,7 @@
 @media screen and (max-width:576px){
     .section{
         align-items: end;
-        height: 105vh;
+        height: 90vh;
         .container{
             flex-direction: column;
             justify-content: center;
@@ -72,6 +72,7 @@
             }
             .text{
                 width: 90%;
+                height: 60%;
                 h1{
                     font-size: 35px;
                 }
@@ -113,3 +114,4 @@
         }
     }
 }
+

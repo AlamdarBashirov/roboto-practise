@@ -36,3 +36,22 @@
     }
 }
 }
+
+
+@media screen and (max-width:576px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:991px){
+    .card{
+        width: 43%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .card{
+        width: 30%;
+    }
+}
